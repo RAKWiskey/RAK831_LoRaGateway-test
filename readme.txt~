@@ -5,11 +5,11 @@
 # [STEP 1] Download and unpack the RAK831_LoRaGateway
 # File must match SHA1 Checksum: 1b994a23b118f83144261e3e786c43df74a81cd5
 #Method one
-wget https://github.com/RAKWiskey/RAK831_LoRaGateway-test/archive/master.zip
+wget https://github.com/RAKWiskey/RAK831_LoRaGateway/archive/master.zip
 unzip master.zip
 
 #Method two
-git clone https://github.com/RAKWiskey/RAK831_LoRaGateway-test.git
+git clone https://github.com/RAKWiskey/RAK831_LoRaGateway.git
 
 
 # [STEP 2] Install libftdi
@@ -21,8 +21,8 @@ sudo apt-get install libftdi-dev
 # - libusb-dev 2:0.1.12-20 (armhf)
 
 
-# Go to the /libmpsse/src directory and install the library
-sudo ./configure --disable-python
+# Go to the src directory and install the library
+./configure --disable-python
 make
 sudo make install
 
